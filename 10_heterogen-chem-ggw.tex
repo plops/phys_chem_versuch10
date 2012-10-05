@@ -18,7 +18,7 @@
 \maketitle
 \section{Ziel des Versuches:}
 Es ist das Massenwirkungsgesetz auf das Zersetzungsgleichgewicht eines
-Nickel-Hexammin-Komplexes anzuwenden. Aus der Temperaturabhängigkeit
+Nickel-Hexamin-Komplexes anzuwenden. Aus der Temperaturabhängigkeit
 der Gleichgewichtskonstanten sind die Standardreaktionsenergie, die
 Standardreaktionsenthalpie sowie die Standardreaktionsentropie zu
 ermitteln.
@@ -33,7 +33,7 @@ ermitteln.
 \section{Theoretische Grundlagen}
 Bei einigen Ammoniak-Additionsverbindungen stellt sich umkehrbar und
 relativ schnell ein Zersetzungsgleichgewicht ein. Beispielsweise kann
-festes Ni-Hexamminchlorid mit festem Diamminchlorid und Ammoniak in
+festes Ni-Hexaminchlorid mit festem Diaminchlorid und Ammoniak in
 der Gasphase im Gleichgewicht stehen:
 
 \begin{align}
@@ -46,7 +46,7 @@ Da feste (s) und gasförmige (g) Phasen beteiligt sind, spricht man von
 einem ``heterogenen Gleichgewicht''.  Das Massenwirkungsgesetz für
 Gl.\eqref{eqn:hex} lautet:
 \begin{align}
-  K(T) = \frac{a_\textrm{Diammin} \cdot a^4_{NH_3}}{a_\textrm{Hexammin}}
+  K(T) = \frac{a_\textrm{Diamin} \cdot a^4_{NH_3}}{a_\textrm{Hexamin}}
 \end{align}
 wobei $a$ die \nomenclature{Aktivit\"at}{bla} Aktivit\"aten der
 jeweiligen Stoffe und $K(T)$ die temperaturabhängige
@@ -72,7 +72,7 @@ als Funktion der Temperatur.
   \centering
   % \input{kapillare.eps_tex}
   \includegraphics{kapillare.eps}
-  \caption{Sketch of the setup. The hexammine powder is hermetically
+  \caption{Sketch of the setup. The hexamine powder is hermetically
     sealed and can be heated to constant temperature using an embedded
     semiconductor temperature sensor. There is also a more precise
     resistive temperature sensor close to the center of the powder.}
@@ -136,14 +136,14 @@ The enthalpy $\dr H^\theta=\dr U^\theta + p \dr V^\theta$ contains an
 additional term that corresponds to the work that is necessary to
 increase the volume of the gas. The ideal gas equations are a good
 approximation for $NH_3$ and we can determine the work. According to
-\eqref{eqn:hex}, \unit[1]{mol} of hexammin reacts to \unit[4]{mol} of
+\eqref{eqn:hex}, \unit[1]{mol} of hexamin reacts to \unit[4]{mol} of
 $NH_3$ gas.
 \begin{align}
   \dr V&= 4V_{NH_3}=4RT/p.
 \end{align}
 \section{Tasks}
 \begin{enumerate}
-\item Measure the disassociation pressure of hexammine $p$ for eight
+\item Measure the disassociation pressure of hexamine $p$ for eight
   temperatures $T\in (90\ldots150^\circ\textrm{C})$.
 \item Display the measured values and a linear fit according to
   equation \eqref{eqn:fit}.
@@ -213,8 +213,16 @@ $B=\unit[(-3302\pm160)]{{}^\circ\textrm{K}}$.
     \caption{Measured data according to the linarization scheme.}
     \label{fig:eval}
   \end{figure}
+
 %a               = 2.47621          +/- 0.4353       (17.58%)
 %b               = -3302.25         +/- 160.1        (4.847%)
+
+  With $R=\unit[8.314]{\textrm{J}/(\textrm{mol K})}$ we obtain
+  $\Delta_R S=\unit[(82\pm14)]{\textrm{J}/(\textrm{mol K})}$ and
+  $\Delta_R U = \unit[(10\pm5)]{\textrm{kJ}/(\textrm{mol K})}$.
+
+% (* 4 8.314 2.47) (* .1758 4 8.314 2.47)
+% (* 4 8.314 3302.25) (* .04847 4 8.314 3302.25)
 \section{Discussion}
 The diagram in figure \ref{fig:meas} indicates, that there occured a
 strong hysteresis during the measurement. This is due to a major flaw
