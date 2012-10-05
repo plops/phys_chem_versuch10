@@ -68,6 +68,18 @@ annimmt. Die Temperaturabhängigkeit der Gleichgewichtskonstanten
 ergibt sich direkt aus der Messung des $NH_3-$Gleichgewichtsdruckes
 als Funktion der Temperatur.
 
+\begin{figure}
+  \centering
+  % \input{kapillare.eps_tex}
+  \includegraphics{kapillare.eps}
+  \caption{Sketch of the setup. The hexammine powder is hermetically
+    sealed and can be heated to constant temperature using an embedded
+    semiconductor temperature sensor. There is also a more precise
+    resistive temperature sensor close to the center of the powder.}
+   \label{fig:kapillare}
+ \end{figure}
+
+
 Der Versuch wird bei konstantem Volumen durchgeführt. Für die
 Gleichgewichtskonstante $K$ gilt dann folgende Beziehung (Lehrbücher
 der Physikal. Chemie):
@@ -142,15 +154,47 @@ $NH_3$ gas.
   H^\theta(T)$ for $T\in\{25\dc,75\dc,125\dc,175\dc\}$.
 \end{enumerate}
 
-\begin{figure}
-  \centering
-  % \input{kapillare.eps_tex}
-  \includegraphics{kapillare.eps}
-  \caption{Sketch of the setup. The hexammine powder is hermetically
-    sealed and can be heated to constant temperature using an embedded
-    semiconductor temperature sensor. There is also a more precise
-    resistive temperature sensor close to the center of the powder.}
-   \label{fig:kapillare}
- \end{figure}
+\section{Measurement}
+
+  \begin{table}[htbp]
+    \centering
+    \begin{tabular}{rr}
+ T/${}^\circ\textrm{C}$ & p/mbar\\
+  21.0 &  20 \\
+  59.3 &  40 \\
+  88.2 & 120 \\
+ 103.0 & 140 \\
+ 109.1 & 158 \\
+ 118.4 & 218 \\
+ 126.6 & 275 \\
+ 129.3 & 302 \\
+ 130.3 & 318 \\
+ 132.7 & 343 \\
+ 138.1 & 408 \\
+ 143.2 & 495 \\
+ 142.1 & 515 \\
+ 115.0 & 335 \\
+  98.3 & 215 \\
+  87.0 & 142 \\
+  80.4 & 110 \\
+  78.0 & 100 \\
+  74.3 &  90 \\
+  70.4 &  80 \\
+  65.8 &  70 \\
+  64.8 &  63 \\
+    \end{tabular}
+    \caption{Pressures for various temperatures.}
+    \label{tab:meas}
+  \end{table}
+  The powder was heated to \unit[140]{{}^\circ\textrm{C}}.  The
+  pressure was measured at stable temperature points (the resistive
+  temperature measurement shouldn't change anymore). The data is
+  displayed in table \ref{tab:meas}.
+
+  It was not possible to heat the powder to more than
+  \unit[145]{{}^\circ\textrm{C}}. Subsequently the temperature was
+  lowered again and occasionally stabilized to measure more pressures.
+
+  
  
 \end{document}
