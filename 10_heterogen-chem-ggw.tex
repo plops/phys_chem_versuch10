@@ -115,10 +115,10 @@ $p^\theta = \unit[10^5]{Pa}$ und erhalten eine lineare Gleichung in $y
   \frac{1}{T} \\
   y(x) &= A+B x
 \end{align}
-Aus den dimensionslosen Fit-Parametern $A$ und $B$ können die
-Standardreaktionsenthalpie $\dr S^\theta$ und die \"Anderung der
-inneren Energie bei Standardbedingungen $\dr U^\theta$ berechnet
-werden.
+Aus den dimensionslosen Fit-Parameter $A$ und dem Parameter $B$ (in
+${}^\circ\textrm{K}$) können die Standardreaktionsenthalpie $\dr
+S^\theta$ und die \"Anderung der inneren Energie bei
+Standardbedingungen $\dr U^\theta$ berechnet werden.
 
 Der lineare Fit ermoeglicht die Bestimmung der
 Gleichgewichtskonstanten $K(T)$ f\"ur beliebige Temperaturen und auch
@@ -186,15 +186,52 @@ $NH_3$ gas.
     \caption{Pressures for various temperatures.}
     \label{tab:meas}
   \end{table}
-  The powder was heated to \unit[140]{{}^\circ\textrm{C}}.  The
+  The powder was heated to \unit[140]{${}^\circ\textrm{C}$}.  The
   pressure was measured at stable temperature points (the resistive
   temperature measurement shouldn't change anymore). The data is
   displayed in table \ref{tab:meas}.
 
   It was not possible to heat the powder to more than
-  \unit[145]{{}^\circ\textrm{C}}. Subsequently the temperature was
+  \unit[145]{${}^\circ\textrm{C}$}. Subsequently the temperature was
   lowered again and occasionally stabilized to measure more pressures.
 
-  
- 
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics{p1.eps}
+    \caption{Pressures for various temperatures, connected in the sequence of measurement.}
+    \label{fig:meas}
+  \end{figure}
+
+\section{Evaluation}
+Figure \ref{fig:eval} displays the data in the linearization scheme
+according to equation \eqref{eqn:fit}. The linear fit delivers the
+parameters $A=2.47\pm0.4$ and
+$B=\unit[(-3302\pm160)]{{}^\circ\textrm{K}}$.
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics{p2.eps}
+    \caption{Measured data according to the linarization scheme.}
+    \label{fig:eval}
+  \end{figure}
+%a               = 2.47621          +/- 0.4353       (17.58%)
+%b               = -3302.25         +/- 160.1        (4.847%)
+\section{Discussion}
+The diagram in figure \ref{fig:meas} indicates, that there occured a
+strong hysteresis during the measurement. This is due to a major flaw
+in the setup. The apparatus is only heated in a small area surrounding
+the powder. The created $NH_3$ gas immediatly leaves the vincinity of
+the heater and cools close to room temperature in the glass capillary
+and the pressure sensor.
+
+This slowly increases the temperature of the apparatus. Therefor the
+measured gas pressures are higher when the temperature is lowered
+again.
+
+Trying to correcting for the effects of the cooling gas would involve
+measuring the gas temperature and estimating the temperature gradients
+and volumes within the apparatus. As this strongly depends on the
+geometry of the apparatus, it seems to be not worth the effort.
+Instead the setup should be improved, so that the whole measurement
+volume has the same temperature.
+
 \end{document}

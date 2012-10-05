@@ -1,2 +1,6 @@
+set term posts eps color enhanced size 3, 2
+set outp "p1.eps"
+unset key
+set xlabel "T/degree Celsius"
+set ylabel "p/mbar"
 plot "bla.dat" u 1:2 w lp
-pause -1

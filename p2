@@ -1,4 +1,9 @@
-f(x) = a*x + b
+set term posts eps color enhanced size 3, 2
+set outp "p2.eps"
+set xlabel "1/T/ in 1/K"
+set ylabel "ln(p[mbar]/10^5 mbar)"
+
+f(x) = a + b*x
 fit f(x) "bla.dat" u (1/(273.15+$1)):(log($2/1e5)) via a,b
 set xrange [0:.004]
 set yrange [-10:2.5]
