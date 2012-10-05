@@ -1,0 +1,2 @@
+plot "bla.dat" u 1:2 w lp
+pause -1
